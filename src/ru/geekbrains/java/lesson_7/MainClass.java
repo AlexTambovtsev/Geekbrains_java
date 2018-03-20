@@ -7,8 +7,8 @@ public class MainClass {
                 new Cat("Kolobok", 117), new Cat("Murka", 15),
                 new Cat("Tigr", 255)};
         plate_1.addFood(700);
-        for (int i = 0; i < arrOfCats.length; i++) {
-            arrOfCats[i].getFood(plate_1);
+        for (Cat cat : arrOfCats) {
+            cat.getFood(plate_1);
         }
         arrOfCats[3].info();
         arrOfCats[3].getFood(plate_1);
